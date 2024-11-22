@@ -1,0 +1,5 @@
+ID: 1
+Model: Dodge Hellcat SRT
+Car Type: Muscle Car
+Quantity: 3
+Rental Rate: 5000.0
