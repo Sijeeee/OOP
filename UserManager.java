@@ -17,7 +17,7 @@ public class UserManager {
             }
         }
 
-        User newUser = new User();
+        User newUser = new User(name, email, age);
         newUser.setName(name);
         newUser.setAge(age);
         newUser.setEmail(email);
@@ -32,12 +32,13 @@ public class UserManager {
     public void LoginUser(String name, int memberID) {
         for (User user : userList) {
             if (user.getName().equals(name) && user.getMemberID() == memberID) {
-                System.out.println("Welcome back, " + name + "!");
-                return;
+                System.out.println("Welcome, " + name + "!");
+            } 
+            else{
+                System.out.println("Invalid name or Membership Pin.");
             }
-        }
-        System.out.println("Invalid name or Membership Pin.");
-       
+        } 
+        
     }
 
     public boolean CheckUser(String name, int memberID) {

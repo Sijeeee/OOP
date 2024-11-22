@@ -5,6 +5,12 @@ private String email;
 private int age;
 private int memberID;
 
+public User(String name, String email, int age) {
+    super();
+    this.name = name;
+    this.email = email;
+    this.age = age;
+}
 public String getName() {
     return name;
 }
